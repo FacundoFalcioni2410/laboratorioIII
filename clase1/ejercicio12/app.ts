@@ -6,8 +6,8 @@ const analizarFecha = (cadena: string) :string =>{
     arr = cadena.split('/');
     mes = parseInt(arr[1]);
     dia = parseInt(arr[0]);
+    
     return signoPorFecha(dia,mes);
-
 }
 
 const signoPorFecha = (dia: number, mes: number) =>{
