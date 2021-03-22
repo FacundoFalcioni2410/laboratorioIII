@@ -25,10 +25,9 @@ const sumarTerminos = (numero: number) =>{
     let arr: string[] = string.split('');
     let result: number = 0;
 
-    for(let i:number = 0; i < arr.length; i++)
-    {
-        result += parseInt(arr[i]);
-    }
+    arr.forEach(element => {
+        result+= parseInt(element);
+    });
     return result;   
 }
 

@@ -18,9 +18,9 @@ var sumarTerminos = function (numero) {
     var string = numero.toString();
     var arr = string.split('');
     var result = 0;
-    for (var i = 0; i < arr.length; i++) {
-        result += parseInt(arr[i]);
-    }
+    arr.forEach(function (element) {
+        result += parseInt(element);
+    });
     return result;
 };
 console.log(iguales(sumarTerminos(1086), descomponerNumero(1086)));
